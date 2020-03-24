@@ -1,7 +1,7 @@
 import React from 'react';
-
+import { Route, Link } from 'react-router-dom';
 const MovieCard = props => {
-  return;
+	return;
 };
 
 export default MovieCard;
