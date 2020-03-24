@@ -3,8 +3,8 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 const MovieList = props => {
-	console.log('Props', props);
 	const [movies, setMovies] = useState([]);
+
 	useEffect(() => {
 		const getMovies = () => {
 			axios
@@ -18,7 +18,7 @@ const MovieList = props => {
 		};
 
 		getMovies();
-	}, []);
+	}, [movies]);
 
 	return (
 		<div className="movie-list">

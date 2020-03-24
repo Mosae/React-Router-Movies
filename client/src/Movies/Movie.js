@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import MovieList from './MovieList';
 
 const Movie = props => {
 	const [movie, setMovie] = useState();
@@ -8,7 +9,8 @@ const Movie = props => {
 	console.log('Params: ', movieID);
 
 	useEffect(() => {
-		const id = 1;
+		// const id = props.movies.find(item => item.id === movieID);
+		const id = movie;
 		console.log('Movie Id ', id);
 
 		// change ^^^ that line and grab the id from the URL
